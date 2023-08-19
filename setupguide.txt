@@ -1,0 +1,31 @@
+SETUP GUIDE TO USE A RASPBERRY PI PICO W AS A BADUSB
+####################################################
+
+If the raspberry pi is alrady used, you need to reset de bootloader, so press
+the little button on the raspberry and hold pressed while put the microusb connector on. 
+
+Now, open the rpi2 device with the file manager. 
+Copy the 'adafruit-circuitpython-raspberry_pi_pico_w-it_IT-8.2.3.uf2' file in the rpi2 folder and wait. The rpi disconnect and riconnect itself. 
+
+So, go to the adafruit-circuitpython-bundle-7.x-mpy-20230808 folder, copy the followinf file and folder:
+- adafruit_debouncer.mpy
+- adafruit_ticks.mpy
+- adafruit-hid (dir)
+- adafruit-wsgi (dir)
+- asyncio (dir)
+
+You need to copy the following files in the root directory of rpi:
+- duckyinpython.py
+- code.py
+- secrets.py (if you want you can change the parametere in this file like ssid or password and so on)
+- webapp.py
+- wsgiserver.py
+
+Now, you can write your own payload and you can put it in the root folder of the rpi with the name 'payload.dd'.
+
+When you copy the payload in the rpi, he run the script, so pay attantion.
+
+Now you rady to go!
+#################################################################################
+
+Author: Mattia Cavaliere
